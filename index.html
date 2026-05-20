@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="main">
+
+     <div class="container">
+                 
+<!--***********************************  HEADING SECTION  *************************************-->
+         
+
+
+                 <div class="heading">
+                      
+                     <div class="firstheading">
+                         <img src="mist.png">
+                         <h1>Weather App</h1>
+                    </div>
+
+                    <h3>Get real time weather updates</h3>
+                     
+                     
+                 </div>
+
+
+
+
+<!--*********************************  SEARCHBAR SECTION  *************************************-->
+
+
+
+
+                 <div class="searchbar">
+                          
+                       <i id="location" class="fa-solid fa-map-pin"></i>
+                       <input id="input" type="text" placeholder="Search for a city...">
+
+                       <div class="searchicon">
+                            <i id="hey" class="fa-solid fa-magnifying-glass"></i>
+                       </div>
+
+                 </div>
+        
+
+
+<!--*********************************  CONTENT SECTION  *************************************-->
+
+                 
+            <div class="maincontent">
+
+                
+                  <div class="firstmc">
+                      <h1><span id="city">Mumbai</span>, <span id="country">IN</span></h1>
+                      <h3><span id="day">Saturday</span>, <span id="date">25 May 2026</span></h3>
+                  </div>
+
+                  <div class="secondmc">
+                      
+                     <img id="mcimg" src="mist.png">
+                     <p id="temp"><span id="temperature">24</span>°C</p>
+
+                  </div>
+
+
+                     <div class="thirdmc">
+                          <h1 id="description">Partly Cloudy</h1>
+                     </div>
+             
+
+                     <div class="fourthmc">
+                           
+                          <div class="fourth ffirst">
+                               <div class="fffirst">
+                                     <img src="humidity.png">
+                                     <h3>Humidity</h3>
+                               </div>
+                               <h1><span id="humidity" >78</span> %</h1>
+                          </div>
+                          <div class="fourth fsecond">
+                             <div class="fffirst">
+                                     <img src="wind.png">
+                                     <h3>Wind Speed</h3>
+                               </div>
+                               <h1><span id="windspeed" >12</span> km/h</h1>
+                          </div>
+                          <div class="fourth fthird">
+                             <div class="fffirst">
+                                     <img src="pressure_icon.png">
+                                     <h3>Pressure</h3>
+                               </div>
+                               <h1><span id="pressure">1012</span> hPa</h1>
+                          </div>
+                          <div class="fourth ffourth">
+                             <div class="fffirst">
+                                     <img src="visibility_icon.png">
+                                     <h3>Visibility</h3>
+                               </div>
+                               <h1><span id="visibility">8</span> km</h1>
+                          </div>
+                           
+                     </div>
+           
+           
+           
+           
+        </div>
+
+ </div>
+
+
+
+
+
+
+
+
+     <script src="script.js"></script>
+</body>
+</html>

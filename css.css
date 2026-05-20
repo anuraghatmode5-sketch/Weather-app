@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #082036;
+}
+
+/* ***********************************  HEADING SECTION  ************************************* */
+
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background: url(default.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    height: 40px;
+    width: 40px;
+}
+
+.heading{
+    margin-top: 20px;
+}
+
+
+.firstheading{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* ***********************************  SEARCHBAR SECTION  ************************************* */
+
+
+.searchbar{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    min-height: 60px;
+    width: 70%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   background: rgba(255,255,255,0.15);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+
+   border: 1px solid rgba(255,255,255,0.2);
+
+}
+
+#input{
+
+    height: 60px;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    color: #082036;
+    
+   background-color: transparent;
+
+
+
+}
+
+input::placeholder{
+
+   color: #082036;
+
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+
+    -webkit-box-shadow: 0 0 0 1000px rgba(255,255,255,0) inset !important;
+
+    -webkit-text-fill-color: #082036 !important;
+
+    transition: background-color 5000s ease-in-out 0s;
+
+}
+
+
+#location{
+    font-size: 20px;
+    color: #082036;
+    margin-left: 20px;
+}
+
+.searchicon{
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #082036;;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#hey{
+    color: white;
+}
+
+
+
+/* ***********************************  CONTENT SECTION  ************************************* */
+
+
+.maincontent{
+    min-height: 500px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 20px 40px;   
+       background: rgba(255,255,255,0.12);
+   backdrop-filter: blur(5px);
+   -webkit-backdrop-filter: blur(5px);
+   border: 1px solid rgba(255,255,255,0.2);
+}
+
+.secondmc{
+     
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+.secondmc p{
+    font-size: 6rem;
+}
+
+.secondmc img{
+    height: 6em;
+    width: 6em;
+}
+
+.thirdmc{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fourthmc{
+    min-height: 160px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    display: flex;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 60px;
+}
+
+.fourth{
+    min-height: 160px;
+    flex-basis: 25%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.fffirst{
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 800px){
+    
+    .fourthmc{
+        flex-direction: column;
+    }
+
+    .fourth{
+      width: 100%;
+    }
+
+}
+
+
+
+@media (max-width :500px){
+    
+    .secondmc p{
+    font-size: 3rem;
+}
+
+    .secondmc img{
+    height: 3em;
+    width: 3em;
+}
+
+   .firstmc h1{
+        font-size: 1rem;
+   }
+
+   .firstmc h3{
+       font-size: 1rem;
+   }
+
+   .thirdmc h1{
+      font-size: 1rem;
+   }
+
+}
+
+
+
+
+@media (max-width :650px){
+            
+    .searchbar{
+        width: 95%;
+        overflow: hidden;
+    }
+    #input{
+        min-width: 20px;
+        font-size: 1rem;
+    }
+    .searchicon{
+        flex-shrink: 0;
+    }
+
+}
