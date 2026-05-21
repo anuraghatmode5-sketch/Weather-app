@@ -4,8 +4,9 @@ let searchbtn = document.querySelector(".searchicon");
 async function getweather(){
 
     let city = input.value.trim();
+    const apiKey = import.meta.env.VITE_API_KEY;
     
-    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=62eae6dc91f7c04be2329b6821a6b682&units=metric`);
+    let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
     
     let data = await response.json();
 
